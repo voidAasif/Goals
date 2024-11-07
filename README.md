@@ -79,4 +79,4 @@ A comprehensive list showing all goals and their current progress.
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/goal-tracking-app.git
+   git clone https://github.com/voidAasif/Goals.git
