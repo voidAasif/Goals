@@ -80,3 +80,11 @@ A comprehensive list showing all goals and their current progress.
 1. Clone this repository:
    ```bash
    git clone https://github.com/voidAasif/Goals.git
+
+## Database Setup
+
+To set up the database, import the provided SQL file:
+
+```bash
+mysql -u username -p database_name < database/goals.sql
+
