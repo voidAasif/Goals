@@ -88,3 +88,19 @@ To set up the database, import the provided SQL file:
 ```bash
 mysql -u username -p database_name < database/goals.sql
 
+## Database Configuration
+
+To keep your database credentials secure and easy to modify, this project uses an external configuration file, `config.properties`. This allows you to update your database settings without changing the source code directly.
+
+### Steps to Set Up Database Credentials
+
+1. **Create a Configuration File**:  
+   Inside the `src` directory of the project, create a new file named `config.properties` if it doesn’t already exist.
+
+   In `config.properties`, add the following lines and replace the values with your own database credentials:
+
+   ```properties
+   # config.properties
+   db.username=your_database_username
+   db.password=your_database_password
+
