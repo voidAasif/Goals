@@ -13,7 +13,7 @@ import java.sql.Date;
 
 import java.util.List;
 
-import com.mysql.cj.xdevapi.PreparableStatement;
+import java.util.Properties;
 
 import java.util.ArrayList;
 
@@ -50,8 +50,8 @@ public class DBManagement {
         final String url = "jdbc:mysql://localhost:3306/goals";
         // final String url = "jdbc:mysql://localhost:3307/goals"; //temp
 
-        final String username = "root";
-        final String password = "myPassword";
+        final String username = props.getProperty("db.username");
+        final String password = props.getProperty("db.password");
 
         try {
             dbConnection = DriverManager.getConnection(url, username, password);
