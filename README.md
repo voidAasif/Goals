@@ -35,7 +35,6 @@ The following technologies were used in building this project:
 
 - **Java**: The primary programming language used for application logic and GUI development.
 - **Java Swing**: Used to create the graphical user interface for a smooth, interactive experience.
-- **JavaFX**: Utilized for additional visual components and scene transitions.
 - **JDBC (Java Database Connectivity)**: Facilitates database operations and allows interaction with the MariaDB database.
 - **MariaDB**: A relational database system used to store and manage goal data.
 - **Properties Configuration**: External configuration via `config.properties` to manage database credentials securely.
