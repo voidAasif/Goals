@@ -50,8 +50,17 @@ public class DBManagement {
         final String url = "jdbc:mysql://localhost:3306/goals";
         // final String url = "jdbc:mysql://localhost:3307/goals"; //temp
 
-        final String username = props.getProperty("db.username");
-        final String password = props.getProperty("db.password");
+        private String username;
+        private String password;
+
+        Properties props = new Properties();
+        try (FileInputStream fis = new FileInputStream("Goals/src/config.properties")) {
+                props.load(fis);
+                username = props.getProperty("db.username");
+                password = props.getProperty("db.password");
+        } catch (IOException e) {
+            System.err.println("Error loading database credentials: " + e.getMessage());
+        }
 
         try {
             dbConnection = DriverManager.getConnection(url, username, password);
