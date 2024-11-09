@@ -46,7 +46,7 @@ The following technologies were used in building this project:
 
 ## Screenshots
 
-Here are some screenshots showcasing the app’s main features. Replace the image paths with actual paths to your screenshots.
+Here are some screenshots showcasing the app’s main features.
 
 ### 1. Welcome Page
 The welcome page greets users with setup options.
